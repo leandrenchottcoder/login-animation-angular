@@ -1,0 +1,126 @@
+<div class="main-container">
+
+    <div class="main-content" [ngClass]="showingPage">
+
+        <!-- SIGN IN CONTAINER -->
+        <div class="signin-container">
+           
+            <div class="login-container">
+
+                <div class="signin-content">
+
+                    <div class="form-content">
+
+                        <span class="title" style="margin-top: -80px;">Connexion</span>
+
+                        <div class="social-medias">
+
+                            <div class="social-icon">
+                                <img src="assets/images/facebook.png">
+                            </div>
+
+                            <div class="social-icon">
+                                <img src="assets/images/google-plus.png">
+                            </div>
+
+                            <div class="social-icon">
+                                <img src="assets/images/linkedin.png">
+                            </div>
+                        </div>
+
+                        <span class="subtitle">Ou utiliser votre compte email</span>
+
+                        <div class="input-container">
+                            <img src="assets/images/o-email.png" alt="">
+                            <input type="text" placeholder="Email">
+                        </div>
+
+                        <div class="input-container">
+                            <img src="assets/images/trancar.png" alt="">
+                            <input type="text" placeholder="Password">
+                        </div>
+
+                        <!-- <span class="custom-subtitle">Mot de passe oublié ?</span> -->
+
+                        <button class="main-button" [ngStyle]="{'marginTop' : '20px'}">
+                            SE CONNECTER
+                        </button>
+                    </div>
+                </div>
+
+                <div class="greeting-container">
+                    <div class="greeting-content">
+
+                        <span class="greeting-title">Bonjour, mon ami</span>
+                        <span class="greeting-subtitle">Entrez vos détails personnels et commencez votre voyage avec nous</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END SIGN IN CONTAINER -->
+
+            <!-- SIGN UP CONTAINER -->
+            <div class="account-container">
+
+                <div class="greeting-container">
+                    <div class="greeting-content">
+
+                        <span class="greeting-title">Bienvenue!</span>
+                        <span class="greeting-subtitle">Veuillez vous connecter avec vos informations personnelles</span>
+                    </div>
+                </div>
+
+                <div class="signin-content">
+
+                    <div class="form-content">
+
+                        <span class="title" [ngStyle]="{'marginTop':'-80px'}">S'inscrire</span>
+
+                        <div class="social-medias">
+
+                            <div class="social-icon">
+                                <img src="assets/images/facebook.png">
+                            </div>
+
+                            <div class="social-icon">
+                                <img src="assets/images/google-plus.png">
+                            </div>
+
+                            <div class="social-icon">
+                                <img src="assets/images/linkedin.png">
+                            </div>
+                        </div>
+
+                        <span class="subtitle" [ngStyle]="{'marginTop':'-20px'}">Ou utilisez votre email pour l'inscription</span>
+
+                        <div class="input-container">
+                            <img src="assets/images/user.png" alt="">
+                            <input type="text" placeholder="Name">
+                        </div>
+
+                        <div class="input-container">
+                            <img src="assets/images/o-email.png" alt="">
+                            <input type="text" placeholder="Email">
+                        </div>
+
+                        <div class="input-container">
+                            <img src="assets/images/trancar.png" alt="">
+                            <input type="text" placeholder="Password">
+                        </div>
+
+                        <button class="main-button" [ngStyle]="{'marginTop':'0px'}">
+                            S'INSCRIRE
+                        </button>
+                    </div>
+                </div>
+                <!-- END SIGN UP CONTAINER -->
+
+            </div>
+
+            <div class="slide-shape">
+                <button class="main-button custom" (click)="toggleView()">
+                    <span class="sign-up">S'INSCRIRE</span>
+                    <span class="sign-in">SE CONNECTER</span>
+                </button>
+            </div>
+        </div>
+    </div>
